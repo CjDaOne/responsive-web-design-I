@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width: 880px;
+	width: 1080px;
 	
 	/* border: 10px dashed black; */
 	margin: 0 auto;
@@ -94,9 +94,23 @@ header {
     max-width: 400px;
     flex-direction: column-reverse;
 }}
+
+@media (max-width: 800px) {header {
+    max-width: 700px;
+    flex-flow: column;
+    justify-content: center;
+       flex-direction: column-reverse;
+}}
+
 .logo {
 	margin: 5%;
 }
+
+@media (max-width: 800px) {.logo {
+    max-width: 700px;
+       text-align: center;
+}}
+
 nav {
 	width: 75%;
 	display: flex; 
@@ -111,6 +125,14 @@ nav {
    
     
 }}
+
+@media (max-width: 800px) {nav {
+    max-width: 700px;
+    width: 100%;
+text-align: center;
+}
+}
+
 nav a {
 	color: grey;
 	text-decoration: none;
@@ -134,6 +156,7 @@ nav a {
 	/* border: 3px solid green; */
   display: flex;
 }
+
 .intro  {
 	/* border: 4px dashed red; */
 /* 	display: inline-block; */
@@ -142,10 +165,22 @@ nav a {
 	padding: 0px 0px 40px; 
 }
 
+@media (max-width: 800px) {.intro {
+    max-width: 700px;
+    width: 100%;
+       justify-content: center;
+}}
+
  .intro h1 {
 	font-size: 50pt;
 	/* border: 1px dashed red; */
 }  
+
+@media (max-width: 800px) {.intro h1 {
+    max-width: 700px;
+    width: 100%;
+       justify-content: center;
+}}
 
 
 .introimg {
@@ -154,6 +189,10 @@ nav a {
 
 @media (max-width: 500px) {.introimg {
     max-width: 400px;
+display: none;}
+}
+@media (max-width: 800px) {.introimg {
+    max-width: 700px;
 display: none;}
 }
 
@@ -215,6 +254,12 @@ header p {
     width: 100%;
  }}
 
+ @media (max-width: 500px) {.top-content div{
+    max-width: 400px;
+    padding-bottom: 20px;
+}}
+
+
 .middle-img {
 	display: block;
 	width: 100%;
@@ -267,6 +312,11 @@ header p {
     max-width: 400px;
     width: 100%;
  }}
+
+ @media (max-width: 500px) {.bottom-content div{
+    max-width: 400px;
+    padding-bottom: 20px;
+}}
 
 .contact-content {
 	margin-top: 30px;
